@@ -16,12 +16,12 @@
                                 <q-btn to="/catalog" color="primary" label="Перейти в каталог"
                                     class="login-btn q-py-sm q-px-lg" size="large" no-caps unelevated />
                                 <q-btn to="/profile" color="secondary" flat label="Мой профиль"
-                                class="q-ml-md q-py-sm q-px-lg" size="large" no-caps />
+                                    class="q-ml-md q-py-sm q-px-lg" size="large" no-caps />
                             </template>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 q-mt-lg q-mt-md-none text-center">
-                        <img src="src/assets/landing.jpg" class="landing-image" alt="Fantasy landscape">
+                        <img :src="landingImg" class="landing-image" alt="Fantasy landscape">
                     </div>
                 </div>
             </div>
@@ -82,6 +82,7 @@
 import { defineComponent } from 'vue'
 import { useAuthStore } from 'src/stores/auth'
 import FantasyCategoriesShowcase from 'src/components/FantasyCategoriesShowcase.vue'
+import landingImg from 'src/assets/landing.jpg'
 
 const authStore = useAuthStore()
 
@@ -104,7 +105,7 @@ defineComponent({
 .header-section {
     padding: 120px 0;
     background: linear-gradient(135deg, #1a103c 0%, #2c1d54 100%);
-    background-image: url('src/assets/landing.jpg');
+    background-image: url('/images/landing.jpg');
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;

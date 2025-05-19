@@ -69,7 +69,6 @@ const goToCategory = (categoryName) => {
 .fantasy-category-card {
     height: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
     border: 1px solid rgba(var(--q-primary-rgb), 0.1);
     background: linear-gradient(135deg, #ffffff 0%, #f5f0ff 100%);
 }
